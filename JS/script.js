@@ -43,7 +43,7 @@ searchform.addEventListener('submit', (e) => {
 
 const fetchWeather = async (txt) => {
     try{
-        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=bd9bf1ffe1424e62a46111630231704&q=${txt}&aqi=no`);
+        const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=<YOUR_API_KEY>&q=${txt}&aqi=no`);
         if(!res.ok){
             alert("City doesn't exist");
             return;
